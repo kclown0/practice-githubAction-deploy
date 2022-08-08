@@ -107,3 +107,6 @@ jobs:
       - name: Upload to S3
         run: aws s3 cp --region ap-northeast-2 ./practice-deploy.zip s3://be-pair-49/practice-deploy.zip
 
+
+      #뭐가 틀렸지
+      
