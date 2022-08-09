@@ -69,13 +69,13 @@ jobs:
     - name: Upload to S3
       run: aws s3 cp --region ap-northeast-2 ./practice-deploy.zip s3://be-pair-49/practice-deploy.zip
 
-#        # CodeDeploy에게 배로 명령을 내립니다.
-#    - name: Code Deploy
-#      run: >
-#        aws deploy create-deployment --application-name be-pair-49
-#        --deployment-config-name CodeDeployDefault.AllAtOnce
-#        --deployment-group-name be-pair-49-group
-#        --s3-location bucket=be-pair-49,bundleType=zip,key=practice-deploy.zip
+        # CodeDeploy에게 배로 명령을 내립니다.
+    - name: Code Deploy
+      run: >
+        aws deploy create-deployment --application-name be-pair-49
+        --deployment-config-name CodeDeployDefault.AllAtOnce
+        --deployment-group-name be-pair-49-group
+        --s3-location bucket=be-pair-49,bundleType=zip,key=practice-deploy.zip
 
 
 
