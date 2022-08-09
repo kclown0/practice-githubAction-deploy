@@ -5,6 +5,8 @@
 # This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
 
+#어떤 데이터를 전송하기 위한 포맷!
+# 종속성을 인스톨을 해야 함 npm node.js 둥
 name: Java CI with Gradle
 
 on:
