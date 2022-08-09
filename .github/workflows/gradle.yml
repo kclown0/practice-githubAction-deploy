@@ -7,33 +7,33 @@
 
 #어떤 데이터를 전송하기 위한 포맷!
 # 종속성을 인스톨을 해야 함 npm node.js 둥
-name: Java CI with Gradle
-
-on:
-  push:
-    branches: [ "main" ]
-
-permissions:
-  contents: read
-
-env:
-  S3_BUCKET_NAME: be-pair-000
-
-jobs:
-  build:
 #name: Java CI with Gradle
 #
 #on:
 #  push:
 #    branches: [ "main" ]
-#  pull_request:
-#    branches: [ "main" ]
-
+#
 #permissions:
 #  contents: read
 #
+#env:
+#  S3_BUCKET_NAME: be-pair-000
+#
 #jobs:
 #  build:
+name: Java CI with Gradle
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
 
     runs-on: ubuntu-latest
 
